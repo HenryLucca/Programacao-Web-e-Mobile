@@ -11,13 +11,16 @@ function createItem() {
     item.style.backgroundColor = randomColor();
     item.classList.add('item-count');
     item.innerHTML = 
-    `<p class="item-name">${itemName}</p> 
+    `
+    <p class="item-name">${itemName}</p> 
     <output id="count">0</output>
     <br>
     <br>  
-    <button onclick="reset(event)" class="btn-reset">Zerar</button>`;
+    <button onclick="reset(event)" class="btn-reset">Zerar</button>
+    `;
     item.onclick = (event) => {count(event)}
     document.getElementById('item-section').appendChild(item);
+    clearInput();
 }
 function count(event){
     console.log(event);
@@ -45,4 +48,7 @@ function randomColor()
   return '#' + parseInt((Math.random() * 0xFFFFFF))
     .toString(16)
     .padStart(6, '0');
+}
+function clearInput(){
+    document.getElementById('item').value = "";
 }
