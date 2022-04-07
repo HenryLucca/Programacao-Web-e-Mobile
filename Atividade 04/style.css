@@ -1,11 +1,30 @@
+body{
+    background-color: #121212;
+}
+.input-section{
+    width: 400px;
+    padding: 6px;
+    background-color: rgb(31, 160, 31);
+    border: 4px double lightskyblue;
+    border-radius: 10px;
+}
 #item-section{
+    background-color: #333;
     display: inline-block;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+h2{
+    color: white;
 }
 .item-count{
     display: inline-block;
     padding: 5px;
     text-align: center;
     margin: 15px;
+    user-select: none;
+    border-radius: 5px;
+    border: 4px double lightskyblue;
 }
 output{
     font-size: 15px;

@@ -14,22 +14,31 @@ function createItem() {
     `<p class="item-name">${itemName}</p> 
     <output id="count">0</output>
     <br>
-    <br>
-    <button onclick="count(event)" class="btn-count">Contar</button>  
+    <br>  
     <button onclick="reset(event)" class="btn-reset">Zerar</button>`;
+    item.onclick = (event) => {count(event)}
     document.getElementById('item-section').appendChild(item);
 }
 function count(event){
-    const item = event.target.parentElement;
-    //const count = item.querySelector('.count');
-    //item.getElementById('count');
-    const count = item.children[1];
-    count.innerHTML = parseInt(count.innerHTML) + 1;
+    console.log(event);
+    console.log(event.target);
+    if(event.target.classList[0] == 'item-count'){
+        const item = event.target;
+        //const count = item.querySelector('.count');
+        //item.getElementById('count');
+        const count = item.children[1];
+        count.innerHTML = parseInt(count.innerHTML) + 1;
+    } else{
+        const item = event.target.parentElement;
+        const count = item.children[1];
+        count.innerHTML = parseInt(count.innerHTML) + 1;
+    }
+    
 }
 function reset(event){
     const item = event.target.parentElement;
     const count = item.children[1];
-    count.innerHTML = '0';
+    count.innerHTML = '-1';
 }
 function randomColor()
 {
