@@ -1,0 +1,12 @@
+#item-section{
+    display: inline-block;
+}
+.item-count{
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    margin: 15px;
+}
+output{
+    font-size: 15px;
+}
