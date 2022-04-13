@@ -1,0 +1,39 @@
+.header{
+    background-color: rgb(35,31,99);
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.header-logo{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.header-nav {
+    display: flex;
+    font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+.header-nav-item{
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+.header-nav-item a{
+	text-transform: uppercase;
+    color: white;
+	font-weight: bold;
+	font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover {
+	text-decoration: underline;
+    font-size: 1.1em;
+}
+nav a:active{
+    color: orange;
+}
