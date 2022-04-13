@@ -133,16 +133,3 @@ main{
 /* .resume-text{
     margin-top: 10px;
 } */
-
-/* FOOTER */
-
-footer{
-    padding-top: 5px;
-    background-color: rgb(35,31,99);
-}
-.footer-nav {
-display: flex;
-flex-direction: column;
-justify-content: center;
-list-style-type: none;
-}
