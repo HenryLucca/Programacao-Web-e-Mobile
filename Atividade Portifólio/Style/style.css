@@ -6,10 +6,8 @@ main{
     background: rgb(35,31,99);
     background: linear-gradient(180deg, rgba(35,31,99,1) 0%, rgba(5,4,75,1) 4%, rgba(101,101,186,1) 11%, rgba(0,212,255,1) 28%, rgba(0,212,255,1) 72%, rgba(101,101,186,1) 89%, rgba(5,4,75,1) 96%, rgba(35,31,99,1) 100%); 
     color: white;
-}
-
-main{
     padding-top: 5px;
+    padding-bottom: 5px;
 }
 .title{
     text-align: center;
@@ -65,10 +63,10 @@ main{
 	font-weight: bold;
 }
 .tecnologies-title:before{
-	content:  " [ 💻 ";
+    content:  " [ 💻 ";
 }
 .tecnologies-title:after{
-	content: " ]";
+    content: " ]";
 }
 .tecnologies {
 	width: 940px;
@@ -94,7 +92,7 @@ main{
 }
 
 .techs {
-	display: inline-block;
+    display: inline-block;
 	text-align: center;
 	width: 30%;
 	vertical-align: top;
@@ -127,9 +125,15 @@ main{
 }
 
 .techs h2 {
-	font-size: 30px;
+    font-size: 30px;
 	font-weight: bold;
 }
 /* .resume-text{
     margin-top: 10px;
 } */
+
+#index-page{
+    text-decoration: orange underline;
+    font-size: 1.1em;
+    color: orange;
+}

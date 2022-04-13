@@ -1,10 +1,25 @@
 footer{
-    padding-top: 5px;
+    margin-top: 0;
     background-color: rgb(35,31,99);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-title{
+    font-size: 2em;
+    color: white;
 }
 .footer-nav {
-display: flex;
-flex-direction: column;
-justify-content: center;
-list-style-type: none;
+    font-size: 1rem;
+}
+.footer-nav-item{
+    list-style: none;
+}
+.footer-nav-item a{
+    color: white;
+    text-decoration: none;
+}
+.footer-sociallinks{
+    justify-content: space-around;
+    list-style: none;
 }

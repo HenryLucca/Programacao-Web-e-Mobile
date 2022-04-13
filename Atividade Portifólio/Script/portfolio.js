@@ -9,6 +9,7 @@ function gerarListaRepos() {
     for (let i = 0; i < repos.length; ++i) {
         // listaFetch.innerHTML += `<li>${i}</li>`;
         const li = document.createElement("li");
+        li.classList.add("repos-item");
         console.log(repos[i].language);
         if (repos[i].description == null) {
             repos[i].description = "Sem descrição";

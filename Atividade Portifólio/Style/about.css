@@ -1,3 +1,14 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+main{
+    background: rgb(35,31,99);
+    background: linear-gradient(180deg, rgba(35,31,99,1) 0%, rgba(5,4,75,1) 4%, rgba(101,101,186,1) 11%, rgba(0,212,255,1) 28%, rgba(0,212,255,1) 72%, rgba(101,101,186,1) 89%, rgba(5,4,75,1) 96%, rgba(35,31,99,1) 100%); 
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 .title{
     text-align: center;
 }
@@ -6,9 +17,6 @@ p{
 }
 p span{
     font-style: italic;
-}
-.music{
-    text-align: center;
 }
 .main{
     width: 50%;
@@ -26,8 +34,11 @@ p span{
 .main-bio{
     font-size: 1.3em;
 }
+.box-about{
+    display: block;
+}
 
-.main-pp{
+.profile-pic{
     width: 15rem;
     height: 15rem;
     float: left;
@@ -42,4 +53,9 @@ p span{
     display: flex;
     gap: 0.5rem;
     justify-content: center;
+}
+#about-page{
+    text-decoration: underline;
+    font-size: 1.1em;
+    color: orange;
 }
