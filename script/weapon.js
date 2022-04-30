@@ -20,13 +20,6 @@ function gerarListaArmas() {
 
       li.classList.add("armas-item");
 
-      if (armas[i].description == null) {
-          armas[i].description = "Sem descrição";
-      }
-      if (armas[i].language == null) {
-          armas[i].language = "Sem linguagem definida";
-      }
-
       li.innerHTML =
           `
           <h2 class="weapon-info" "weapon-title">${armas[i].displayName}</h2>
