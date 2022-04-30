@@ -6,6 +6,7 @@ const listaRepos = document.getElementById("repos");
 
 function gerarListaRepos() {
     listaRepos.innerHTML = "";
+    
     for (let i = 0; i < repos.length; ++i) {
         // listaFetch.innerHTML += `<li>${i}</li>`;
         const li = document.createElement("li");
