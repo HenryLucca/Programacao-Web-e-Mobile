@@ -3,12 +3,13 @@
 const urlArmas = "https://valorant-api.com/v1/weapons";
 let armas = [];
 
-const imagem = document.getElementById("weapon");
-const listaArma = document.getElementById("listaArma");
+var selectedWeapon;
 
+const gerarListaArmas = () => {
 
-function gerarListaArmas() {
-
+  const imagem = document.getElementById("weapon");
+  const listaArma = document.getElementById("listaArma");
+  
   console.log(armas);
   listaArma.innerHTML = "";
 
@@ -18,30 +19,35 @@ function gerarListaArmas() {
       console.log(qtdSkins);
       const li = document.createElement("li");
 
-      li.classList.add("armas-item");
-
-      li.innerHTML =
+      // Faca
+      if(i == armas.length-1){
+        li.innerHTML =
           `
-          <h2 class="weapon-info" "weapon-title">${armas[i].displayName}</h2>
-          <img id="weapon-image" src="${armas[i].displayIcon}" > </img>
-          <p class="weapon-info" id="weapon-cost"> Custo : ${armas[i].shopData.cost}</p>
+          <h2 class="arma-info" id="arma-name">${armas[i].displayName}</h2>
+          <img id="arma-image" src="${armas[i].displayIcon}" > </img>
           <p class="weapon-info" id="qtd-skins" >Quantidade de skins : ${qtdSkins}</p>
-          <p class="weapon-info" id="weapon-category"> Categoria : ${armas[i].shopData.category}</p>
-          <p class="weapon-info" id="weapon-magazine"> Tamanho do pente : ${armas[i].weaponStats.magazineSize}</p>
         `;
+        
+      }
+      // Caso Geral 
+      else {
+        li.innerHTML =
+            `
+            <h2 class="weapon-info" "weapon-title">${armas[i].displayName}</h2>
+            <img id="weapon-image" src="${armas[i].displayIcon}" > </img>
+            <p class="weapon-info" id="weapon-cost"> Custo : ${armas[i].shopData.cost}</p>
+            <p class="weapon-info" id="qtd-skins" >Quantidade de skins : ${qtdSkins}</p>
+            <p class="weapon-info" id="weapon-category"> Categoria : ${armas[i].shopData.category}</p>
+            <p class="weapon-info" id="weapon-magazine"> Tamanho do pente : ${armas[i].weaponStats.magazineSize}</p>
+          `;
+      }
 
-      // li.onclick = (event) => {
-      //     window.open(armas[i].html_url);
-      // }
+
+      li.onclick = (event) => window.location.href = `./skins.html?id=${i}`;
+
       listaArma.appendChild(li);
   }
 }
-
-// const exibirInformaçãoDeArma = () =>{
-//     console.log(armas);
-
-//     imagem.src = armas[2].displayIcon;
-// }
 
 const fetchArmas = () => {
     fetch(urlArmas)
@@ -55,10 +61,9 @@ const fetchArmas = () => {
      );
 };
 
-
-
 function voltarPagina(){
     window.history.back();
 }
 
 fetchArmas();
+
