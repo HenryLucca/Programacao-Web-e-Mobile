@@ -33,7 +33,7 @@ const gerarListaArmas = () => {
       else {
         li.innerHTML =
             `
-            <h2 class="weapon-info" "weapon-title">${armas[i].displayName}</h2>
+            <h2 class="weapon-info" id="weapon-title">${armas[i].displayName}</h2>
             <img id="weapon-image" src="${armas[i].displayIcon}" > </img>
             <p class="weapon-info" id="weapon-cost"> Custo : ${armas[i].shopData.cost}</p>
             <p class="weapon-info" id="qtd-skins" >Quantidade de skins : ${qtdSkins}</p>
