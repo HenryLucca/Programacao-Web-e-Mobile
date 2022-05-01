@@ -36,9 +36,9 @@ const gerarListaAgentes = () => {
 
         li.innerHTML =
             `
-              <h2 class="agent-info" "agent-title">${agents[i].displayName}</h2>
+              <h2 class="agent-info" id="agent-title">${agents[i].displayName}</h2>
               <img id="agent-image" src="${agents[i].displayIcon}" > </img>
-              <
+              <p class="agent-info" id="agent-title">${agents[i].description}</p>
             `;
 
 
