@@ -32,11 +32,21 @@ function mostrarSkins() {
         const li = document.createElement("li");
         li.classList.add("weapon-card");
         arma.skins[i].displayIcon == null ? arma.skins[i].displayIcon = "../assets/defaultIcon.png" : arma.skins[i].displayIcon;
-        li.innerHTML =
-            `
-            <h2 class="skin-info" id="skin-name">${arma.skins[i].displayName}</h2>
-            <img id="skin-image" src="${arma.skins[i].displayIcon}" > </img>
-          `;
+        
+        if (arma.skins[i].displayName.includes("Standard")) {
+            li.innerHTML =
+                `
+                <h2 class="skin-info" id="skin-name">${arma.skins[i].displayName}</h2>
+                <img id="skin-image" src="${arma.displayIcon}" > </img>
+              `;
+        } else {
+            li.innerHTML =
+                `
+                <h2 class="skin-info" id="skin-name">${arma.skins[i].displayName}</h2>
+                <img id="skin-image" src="${arma.skins[i].displayIcon}" > </img>
+              `;
+
+        }
 
         listaSkin.appendChild(li);
     }
