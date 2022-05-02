@@ -35,6 +35,7 @@
     font-family:'Montserrat', sans-serif;
     font-weight: 500;
     
+    
 }
 
 .style-box h2{
@@ -92,6 +93,9 @@ border-radius: 27px 27px 27px 27px;
     background-repeat: no-repeat;   
 }
 
+.agente1{
+    background-image:url(../img/breach.png);
+}
 .agente2{
     background-image:url(../img/raze.png);
 }
@@ -99,6 +103,18 @@ border-radius: 27px 27px 27px 27px;
 .agente3{
     background-image:url(../img/Chamber_KeyArt.png);
     background-repeat: no-repeat;
+}
+
+.agente4{
+    background-image:url(../img/KAYO.png);
+}
+
+.agente5{
+    background-image:url(../img/skye.png);
+}
+
+.agente6{
+    background-image:url(../img/cipher.png);
 }
 
 .agente7{
@@ -111,10 +127,42 @@ border-radius: 27px 27px 27px 27px;
     margin-right: 6px;
 }
 
+.agente9{
+    background-image:url(../img/Viper.png);
+}
+
 .agente10{
     background-image:url(../img/Phx.png);
 }
 
+.agente11{
+    background-image:url(../img/Astra.png);
+}
+
+.agente12{
+    background-image:url(../img/Brimstone.png);
+}
+
+.agente13{
+    background-image:url(../img/Neon.png);
+}
+
+.agente14{
+ background-image:url(../img/yoru.png);
+}
+
+.agente15{
+    background-image:url(../img/sage.png);
+}
+
+.agente16{
+    background-image:url(../img/Reyna.png);
+}
+
 .agente17{
     background-image:url(../img/Omen.png);
+}
+
+.agente18{
+    background-image:url(../img/jett.png);
 }
