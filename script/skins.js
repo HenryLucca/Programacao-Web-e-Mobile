@@ -25,11 +25,12 @@ function mostrarSkins() {
     const arma = armas[id];
 
     const listaSkin = document.getElementById("listaSkin");
+    
     listaSkin.innerHTML = "";
 
     for (let i = 0; i < arma.skins.length; ++i) {
         const li = document.createElement("li");
-
+        li.classList.add("weapon-card");
         arma.skins[i].displayIcon == null ? arma.skins[i].displayIcon = "../assets/defaultIcon.png" : arma.skins[i].displayIcon;
         li.innerHTML =
             `
