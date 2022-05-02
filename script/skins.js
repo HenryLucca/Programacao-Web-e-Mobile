@@ -41,5 +41,5 @@ function mostrarSkins() {
 }
 
 function voltarPagina() {
-    window.history.back();
+    window.location.href = "./weapons.html";
 }
