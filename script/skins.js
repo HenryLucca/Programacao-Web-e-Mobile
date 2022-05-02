@@ -30,6 +30,7 @@ function mostrarSkins() {
     for (let i = 0; i < arma.skins.length; ++i) {
         const li = document.createElement("li");
 
+        arma.skins[i].displayIcon == null ? arma.skins[i].displayIcon = "../assets/defaultIcon.png" : arma.skins[i].displayIcon;
         li.innerHTML =
             `
             <h2 class="skin-info" id="skin-name">${arma.skins[i].displayName}</h2>
@@ -38,6 +39,10 @@ function mostrarSkins() {
 
         listaSkin.appendChild(li);
     }
+}
+
+function renderSkin(skin){
+
 }
 
 function voltarPagina() {
