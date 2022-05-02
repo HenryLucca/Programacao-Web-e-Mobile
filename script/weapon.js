@@ -18,6 +18,7 @@ const gerarListaArmas = () => {
       const qtdSkins = armas[i].skins.length;
       console.log(qtdSkins);
       const li = document.createElement("li");
+      li.classList.add("weapon-card");
 
       // Faca
       if(i == armas.length-1){

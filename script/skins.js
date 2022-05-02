@@ -29,6 +29,7 @@ function mostrarSkins() {
 
     for (let i = 0; i < arma.skins.length; ++i) {
         const li = document.createElement("li");
+        li.classList.add("skin-card");
 
         li.innerHTML =
             `
@@ -41,5 +42,5 @@ function mostrarSkins() {
 }
 
 function voltarPagina() {
-    window.location.href = "./weapons.html";
+    window.href = "././weapon.html";
 }
