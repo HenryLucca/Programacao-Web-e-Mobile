@@ -33,12 +33,12 @@ const gerarListaAgentes = () => {
     for (let i = 0; i < agents.length; ++i) {
         // listaFetch.innerHTML += `<li>${i}</li>`;
         const li = document.createElement("li");
-
+        li.classList.add("style-box");
         li.innerHTML =
-            `
+            ` 
               <h2 class="agent-info" id="agent-title">${agents[i].displayName}</h2>
               <img id="agent-image" src="${agents[i].displayIcon}" > </img>
-              <p class="agent-info" id="agent-title">${agents[i].description}</p>
+              <p class="agent-info" id="agent-info">${agents[i].description}</p>
             `;
 
 
