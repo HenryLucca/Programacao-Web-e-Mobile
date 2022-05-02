@@ -1,0 +1,59 @@
+
+
+.bodyBox{
+ 
+
+
+}
+.style-box p{
+    word-break: break-all;
+    white-space: normal;
+    font-weight: bold;
+    color: #000;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.style-box h2{
+    font-family:'Montserrat', sans-serif;;
+    font-weight: bold,800;
+  
+}
+
+.style-box {
+   margin-bottom: 20px;
+   margin-left:50px;
+   width:300px;
+   height:400px;
+   height:auto;
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   border: solid;
+   padding:20px;
+   border-radius: 15px;
+   background-color:rgba(234,56,72,255);
+   transition: 1s;
+   
+}
+
+.style-box:hover{
+    width:350px;
+   height:450px;
+}
+
+#listaAgents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+
+}
+
+
+#agent-image {
+    border: solid;
+    width: 256px;
+    height: 256px;
+    background-color:rgba(16,22,34,255);
+}
