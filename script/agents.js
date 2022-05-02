@@ -41,9 +41,6 @@ const gerarListaAgentes = () => {
               <p class="agent-info" id="agent-info">${agents[i].description}</p>
             `;
 
-
-        li.onclick = (event) => window.location.href = `./skins.html?id=${i}`;
-
         listaAgents.appendChild(li);
     }
 }
