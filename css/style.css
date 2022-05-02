@@ -12,13 +12,16 @@
     color: #000;
     font-family:'Montserrat', sans-serif;
     font-weight: 500;
+    
 }
 
 .style-box h2{
     font-family:'Montserrat', sans-serif;;
     font-weight: bold,800;
+    
   
 }
+
 
 .style-box {
    margin-bottom: 20px;
@@ -37,9 +40,12 @@
    
 }
 
-.style-box:hover{
+.style-box:hover,style-box h2{
     width:350px;
-   height:450px;
+   height:350px;
+   text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px, -4px 22px 5px rgba(0,0,0,0.7);
+
+
 }
 
 #listaAgents{
