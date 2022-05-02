@@ -34,7 +34,8 @@
    align-items: center;
    border: solid;
    padding:20px;
-   border-radius: 15px;
+   border: 8px solid #000000;
+border-radius: 24px 24px 0px 0px;
    background-color:rgba(234,56,72,255);
    transition: 1s;
    
@@ -42,7 +43,7 @@
 
 .style-box:hover,style-box h2{
     width:350px;
-   height:350px;
+   
    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px, -4px 22px 5px rgba(0,0,0,0.7);
 
 
@@ -58,7 +59,8 @@
 
 
 #agent-image {
-    border: solid;
+    border: 10px double rgba(0,0,0,0.86);
+border-radius: 27px 27px 27px 27px;
     width: 150px;
     height: 150px;
     background-color:rgba(16,22,34,255);
