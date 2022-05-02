@@ -29,11 +29,17 @@ const gerarListaAgentes = () => {
 
     console.log(agents);
     listaAgents.innerHTML = "";
-
+   
+    
     for (let i = 0; i < agents.length; ++i) {
         // listaFetch.innerHTML += `<li>${i}</li>`;
+        let nome = "agente";
+        let classe = nome+i;
+  
         const li = document.createElement("li");
         li.classList.add("style-box");
+        li.classList.add(classe);
+   
         li.innerHTML =
             ` 
               <h2 class="agent-info" id="agent-title">${agents[i].displayName}</h2>

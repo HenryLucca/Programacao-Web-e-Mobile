@@ -31,7 +31,7 @@
     word-break: break-all;
     white-space: normal;
     font-weight: bold;
-    color: #000;
+    color: #fff;
     font-family:'Montserrat', sans-serif;
     font-weight: 500;
     
@@ -79,11 +79,42 @@ border-radius: 24px 24px 0px 0px;
 
 }
 
-
 #agent-image {
     border: 10px double rgba(0,0,0,0.86);
 border-radius: 27px 27px 27px 27px;
     width: 150px;
     height: 150px;
     background-color:rgba(16,22,34,255);
+}
+
+.agente0{
+    background-image:url(../img/fade_artwork2.png);
+    background-repeat: no-repeat;   
+}
+
+.agente2{
+    background-image:url(../img/raze.png);
+}
+
+.agente3{
+    background-image:url(../img/Chamber_KeyArt.png);
+    background-repeat: no-repeat;
+}
+
+.agente7{
+    background-image:url(../img/Sova_artwork.png);
+}
+
+.agente8{
+    background-image:url(../img/KillJoy.png);
+    background-repeat: no-repeat;
+    margin-right: 6px;
+}
+
+.agente10{
+    background-image:url(../img/Phx.png);
+}
+
+.agente17{
+    background-image:url(../img/Omen.png);
 }
