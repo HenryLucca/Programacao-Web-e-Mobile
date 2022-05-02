@@ -31,11 +31,20 @@ function mostrarSkins() {
         const li = document.createElement("li");
         li.classList.add("skin-card");
 
-        li.innerHTML =
-            `
-            <h2 class="skin-info" id="skin-name">${arma.skins[i].displayName}</h2>
-            <img id="skin-image" src="${arma.skins[i].displayIcon}" > </img>
-          `;
+        if (arma.skins[i].displayName.includes("Standard")) {
+            li.innerHTML =
+                `
+                <h2 class="skin-info" id="skin-name">${arma.skins[i].displayName}</h2>
+                <img id="skin-image" src="${arma.displayIcon}" > </img>
+              `;
+        } else {
+            li.innerHTML =
+                `
+                <h2 class="skin-info" id="skin-name">${arma.skins[i].displayName}</h2>
+                <img id="skin-image" src="${arma.skins[i].displayIcon}" > </img>
+              `;
+
+        }
 
         listaSkin.appendChild(li);
     }
