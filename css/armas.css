@@ -77,7 +77,7 @@
   .weapon-card{
     margin-bottom: 20px;
     margin-left:50px;
-    width:550px;
+    width:auto;
     height:300px;
     height:auto;
     display:flex;
