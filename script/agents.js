@@ -44,6 +44,12 @@ const gerarListaAgentes = () => {
             ` 
               <h2 class="agent-info" id="agent-title">${agents[i].displayName}</h2>
               <img id="agent-image" src="${agents[i].displayIcon}" > </img>
+              <div class="abilities">                                                     
+                    <img  class="abilities1" src="${agents[i].abilities[0].displayIcon}" > </img>
+                    <img  class="abilities1" src="${agents[i].abilities[1].displayIcon}" > </img>   
+                    <img  class="abilities1" src="${agents[i].abilities[2].displayIcon}" > </img>   
+                    <img  class="abilities1" src="${agents[i].abilities[3].displayIcon}" > </img>    
+              </div>
               <p class="agent-info" id="agent-info">${agents[i].description}</p>
             `;
 

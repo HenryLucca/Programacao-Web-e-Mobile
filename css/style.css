@@ -90,6 +90,15 @@ border-radius: 27px 27px 27px 27px;
     background-color:rgba(16,22,34,255);
 }
 
+.abilities1{
+    width: 30px;
+    height: 30px;
+    border: 10px double rgba(0,0,0,0.86);
+    border-radius: 27px 27px 27px 27px;  
+    background-color:rgba(16,22,34,255);
+    margin: 10px 0;
+}
+
 .agente0{
     background-image:url(../img/fade_artwork2.png);
     background-repeat: no-repeat;   
