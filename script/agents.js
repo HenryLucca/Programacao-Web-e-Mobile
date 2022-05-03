@@ -51,6 +51,8 @@ const gerarListaAgentes = () => {
                     <img  class="abilities1" src="${agents[i].abilities[3].displayIcon}" > </img>    
               </div>
               <p class="agent-info" id="agent-info">${agents[i].description}</p>
+              <img  class="abilities1" src="${agents[i].role.displayIcon}" > </img> 
+              <p class="agent-info" >${agents[i].role.displayName}</p>
             `;
 
         listaAgents.appendChild(li);
