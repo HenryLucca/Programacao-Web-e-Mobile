@@ -29,10 +29,13 @@ function mostrarSkins() {
     listaSkin.innerHTML = "";
 
     for (let i = 0; i < arma.skins.length; ++i) {
+       
         const li = document.createElement("li");
         li.classList.add("weapon-card");
         arma.skins[i].displayIcon == null ? arma.skins[i].displayIcon = "../assets/defaultIcon.png" : arma.skins[i].displayIcon;
+      
         
+
         if (arma.skins[i].displayName.includes("Standard")) {
             li.innerHTML =
                 `
@@ -47,7 +50,7 @@ function mostrarSkins() {
               `;
 
         }
-
+       
         listaSkin.appendChild(li);
     }
 }

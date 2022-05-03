@@ -15,11 +15,17 @@ const gerarListaArmas = () => {
 
   for (let i = 0; i < armas.length; ++i) {
       // listaFetch.innerHTML += `<li>${i}</li>`;
+      let arma = "arma";
+      let classe = arma+i;
+    
       const qtdSkins = armas[i].skins.length;
       console.log(qtdSkins);
       const li = document.createElement("li");
       li.classList.add("weapon-card");
+      li.classList.add(classe);
+     
 
+    
       // Faca
       if(i == armas.length-1){
         li.innerHTML =
